@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Simple Map</title>
+  <script type="text/javascript"> 
+function randomString(len) {
+　　len = len || 32;
+　　var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
+　　var maxPos = $chars.length;
+　　var pwd = '';
+　　for (i = 0; i < len; i++) {
+　　　　pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+　　}
+　　return pwd;
+}
+
+var thisid=randomString(5);
+alert(thisid);
+var div1=document.getElementsByClassName("tundra").find("a")[0];
+div1.
+document.getElementsByClassName("tundra").find("a")[0].innerHtml("1");
+document.getElementsByClassName("tundra").find("a")[0].id=randomString(5);
+  </script>
+  </head>
+  <body class="tundra">
+    <div class="a" style="width:900px; height:600px; border:1px solid #000;">
+      <div>232</div>
+    </div>
+  </body>
+</html>

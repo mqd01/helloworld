@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script src="/Users/mqd/Downloads/jquery-3.0.0.js "></script>
+</script>
+<script>
+$(document).ready(function(){
+$.ajax({
+        url: "http://192.168.2.210:3000/dashboard/db/t3?orgId=1&panelId=4&fullscreen&from=1517376874712&to=1517398474712",
+       async:false,
+  type:'post',
+  dataType:'html',
+  success:function(data) {
+      console.log("-------------------------------------------------");
+      var htmlTextText = $('div').html(data);
+      
+      console.log("-------------------------------------------------");
+   //自动为布局文件的html中加上id
+     }
+    });
+
+ //    alert(2);
+	// $("button").click(function(){
+ //        alert(1);
+	
+ //               $.ajax({
+ //  url: "http://localhost:8081/api/v1/namespaces/13921226666/deployment",
+ //  async:false,
+ //  type:'post',
+ //  dataType:'html',
+ //  success:function(data) {
+ //      console.log("-------------------------------------------------");
+ //      var htmlTextText = $('div').html(data);
+ //      alert(1);
+ //   //自动为布局文件的html中加上id
+ //     }
+ //  });
+                 
+
+
+	// });
+});
+
+    //         function checkMobile(){ 
+    // var sMobile = document.getElementById("mobile").value;
+    // if(!(/^[1][3,4,5,7,8][0-9]{9}$/.test(sMobile))){ 
+    //    // alert("不是完整的11位手机号或者正确的手机号前七位"); 
+       
+    //     document.getElementById("mobile_tip").innerHTML="不是完整的11位手机号或者正确的手机号前七位";
+    //      document.getElementById("mobile").focus(); 
+    // }else{
+    //     document.getElementById("mobile_tip").innerHTML="√";
+    // }
+    
+// }
+</script>
+</head>
+<body>
+ <ul>
+     Deployment_status: <li id="Deployment_status"></li>
+    Deployment_name: <li id="Deployment_name"></li>
+ </ul>
+<!-- <form class="" onSubmit="checkMobile();" name="mobileform"  method="post"  id="doregister">
+        
+                            <div class="control-group">
+                                <input type="text" name="mobile" placeholder="手机号" class="span4" id="mobile" onblur="checkMobile();">
+                                <span id="mobile_tip"></span>
+                            </div>
+        
+                            <div class="control-group">
+                                <input type="password" name="password" placeholder="密码" class="span4">
+                            </div>
+                            
+                            <div class="control-group">
+                                <div class="span4" style="margin-left: 0px;">
+                                    <input type="text" name="verify" id="inputCode" placeholder="验证码" style="width:232px;" onblur="validateCode();">
+                                    <div class="code" id="checkCode" onclick="createCode()" ></div>
+                                </div>
+                            </div>
+        
+                            <div class="control-group">
+                                <div class="span4" style="margin-left: 0px;">
+                                    <input type="text" name="mobile_verify" placeholder="手机验证码" style="width:232px;">
+                                    <a class="btn btn-success" style="width: 96px;" onclick="send_msg();">获取验证码</a>
+                                </div>
+                            </div>
+        
+                            <div class="control-group">
+                                <button class="btn btn-primary js-ajax-submit span4"  data-wait="1500" style="margin-left: 0px;" onclick="registerajax();">确定注册</button>
+                            </div>
+        
+                            <div class="control-group" style="text-align: center;">
+                                <p>
+                                    已有账号? <a href="CmfFrontPageController.do?login&corpid=${corpid}">点击此处登录</a>
+                                </p>
+                            </div>
+                        </form> -->
+<div id="div1"><h2>使用 jQuery AJAX 修改文本内容</h2></div>
+<button>获取其他内容</button>
+
+</body>
+</html>
